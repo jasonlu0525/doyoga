@@ -1,0 +1,33 @@
+.intro__img {
+    height: 218px;
+
+    @include pad {
+        height: 341px;
+    }
+}
+.intro__course__img{
+    height: 196px;
+    width: 100%;
+    margin-bottom: 30px;
+    &.last{
+        margin-bottom: 0;
+    }
+  
+    @include pad{
+        margin-bottom: 44px;
+        &.last__row{
+            margin-bottom: 0;
+        }
+    }
+    @include pc{
+        margin-bottom: 30px;
+    }
+}
+.intro-text{
+    position: relative;
+    right: 0;
+    top:0;
+    @include  pc{
+        position:absolute;
+    }
+}

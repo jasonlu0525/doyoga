@@ -1,0 +1,189 @@
+---
+title: 填寫資料
+layout: ./app/layout.ejs
+engine: ejs
+current: filin
+---
+
+<section class="pt-12 pb-22 pt-md-16 pb-md-20 pb-lg-26 ">
+    <div class="container">
+        <h2 class="text-primary mb-6 mb-md-4 text-center">立即預約</h2>
+
+        <ul class="row justify-content-center mb-8 mb-md-6 mb-lg-8">
+            <li class="col-4 col-md-2">
+                <a href="reservation-level.html" class="btn btn-info  rounded-16 text-primary  w-100">
+                    選擇方案
+                </a>
+            </li>
+            <li class="col-4 col-md-2 ">
+                <a href="javascript:void(0);" class="btn btn-primary rounded-16 w-100 text-white ">
+                    填寫資料
+                </a>
+            </li>
+            <li class="col-4 col-md-2 ">
+                <a href="javascript:void(0);" class="btn btn-info rounded-16 w-100 text-primary">
+                    完成預約
+                </a>
+            </li>
+        </ul>
+        <div class="d-flex justify-content-center align-items-center mb-6 mb-lg-8">
+            <p class="mb-0">您選擇的是</p>
+            <h3 class=" mb-0 text-secondary fs-5 ms-4">首次體驗課程-基礎</h3>
+        </div>
+
+
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-6 col-lg-4 text-dark">
+                <div class="mb-8 ">
+                    <h4 class="mb-4 fs-6">1. 是否接觸過瑜珈?</h4>
+                    <div class="d-flex">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="do_yoga_ever" id="yes">
+                            <label class="form-check-label" for="yes">
+                                是
+                            </label>
+                        </div>
+
+                        <div class="form-check ms-8">
+                            <input class="form-check-input" name="do_yoga_ever" type="radio" value="0" id="no">
+                            <label class="form-check-label" for="no">
+                                否
+                            </label>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="mb-8">
+                    <h4 class="mb-4 fs-6">2. 想改善的生活問題?</h4>
+                    <div class="row g-0">
+                        <div class="form-check col-4">
+                            <input class="form-check-input" type="checkbox" value="1" id="stamina">
+                            <label class="form-check-label" for="stamina">
+                                肌耐力不足
+                            </label>
+                        </div>
+
+                        <div class="form-check col-4">
+                            <input class="form-check-input" type="checkbox" value="1" id="Softness">
+                            <label class="form-check-label" for="Softness">
+                                柔軟度不佳
+                            </label>
+                        </div>
+                        <div class="form-check col-4">
+                            <input class="form-check-input" type="checkbox" value="1" id="pressure">
+                            <label class="form-check-label" for="pressure">
+                                壓力大
+                            </label>
+                        </div>
+                        <div class="form-check col-4">
+                            <input class="form-check-input" type="checkbox" value="1" id="posture">
+                            <label class="form-check-label" for="posture">
+                                姿勢不正
+                            </label>
+                        </div>
+                        <div class="form-check col-4">
+                            <input class="form-check-input" type="checkbox" value="1" id="slumber">
+                            <label class="form-check-label" for="slumber">
+                                睡眠品質差
+                            </label>
+                        </div>
+                        <div class="form-check col-4">
+                            <input class="form-check-input" type="checkbox" value="1" id="Attention">
+                            <label class="form-check-label" for="Attention">
+                                Attention
+                            </label>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="mb-8">
+                    <h4 class="mb-4 fs-6">3. 每週累積運動量約為多少？</h4>
+                    <div class="row g-0">
+                        <div class="form-check col-6">
+                            <input class="form-check-input" type="radio" name="exercise__frquency" value="150 分鐘以上"
+                                id="min__150__uper">
+                            <label class="form-check-label" for="min__150__uper">
+                                150 分鐘以上
+                            </label>
+                        </div>
+
+                        <div class="form-check col-6 ">
+                            <input class="form-check-input" type="radio" name="exercise__frquency" value=" 75~150 分鐘"
+                                id="min__75">
+                            <label class="form-check-label" for="min__75">
+                                75~150 分鐘
+                            </label>
+                        </div>
+                        <div class="form-check col-6">
+                            <input class="form-check-input" type="radio" name="exercise__frquency" value="30~75 分鐘"
+                                id="min__30">
+                            <label class="form-check-label" for="min__30">
+                                30~75 分鐘
+                            </label>
+                        </div>
+                        <div class="form-check  col-6">
+                            <input class="form-check-input" type="radio" name="exercise__frquency" value="30 分鐘以下"
+                                id="min__30__lower">
+                            <label class="form-check-label" for="min__30__lower">
+                                30 分鐘以下
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-8">
+                    <label for="date d-block">
+                        <h4 class="mb-1 fs-6">4. 上課預約報到日</h4>
+                    </label>
+                    <small class="mb-2 d-block">若還沒有確定的日期，可以等待專員與您聯絡時再做詳細的諮詢哦！</small>
+                    <div class="row">
+                        <div class="col-6 col-md-4 col-lg-6">
+                            <input class="form-control placeholder--primary " type="text" name="date" id="date"
+                                placeholder="MM/DD/YY">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="mb-8">
+                    <h4 class="mb-4 fs-6">5. 填寫基本資料，完成預約後會寄送通知至電子信箱</h4>
+                    <div class="row g-2">
+                        <div class="col-6 mb-4">
+                            <label for="name" class="form-check-label text-primary mb-2">姓名</label>
+                            <input type="text" id="name" name="name" class="form-control placeholder--secondary"
+                                placeholder="請輸入您的姓名">
+                        </div>
+                        <div class="col-6 mb-4">
+                            <label for="age" class="form-check-label text-primary mb-2">年齡</label>
+                            <input type="number" id="age" name="age"  min="1" class="form-control placeholder--secondary number__apperance--none"
+                                placeholder="請輸入您的年齡">
+                        </div>
+                        <div class="col-auto mb-4">
+                            <label for="sex" class="form-check-label text-primary mb-2">性別</label>
+                            <select id="sex" name="sex" class="form-select text-secondary">
+                                <option value="男">男</option>
+                                <option value="女">女</option>
+                            </select>
+
+                        </div>
+                        <div class="col-12 mb-4">
+                            <label for="email" class="form-check-label text-primary mb-2">電子信箱</label>
+                            <input type="email" id="email" name="email" class="form-control placeholder--secondary"
+                                placeholder="email@example.com">
+                        </div>
+
+                        <div class="col-12 mb-8">
+                            <label for="phone" class="form-check-label text-primary mb-2">手機號碼</label>
+                            <input type="tel" id="phone" name="phone" class="form-control placeholder--secondary"
+                                placeholder="0912-345-678">
+                        </div>
+
+                        <div class="col-12"><a href="success.html" class="btn btn-secondary text-white w-100 fs-5">送出</a></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
