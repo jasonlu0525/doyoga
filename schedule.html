@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>完成預約</title>
+  <title>本月課表</title>
 
   <link
     href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
@@ -99,75 +99,183 @@
 
   </header>
   <!-- d-flex flex-column flex-lg-row  justify-content-lg-between  align-items-md-start  align-items-lg-cente -->
-  
-<section class="pt-12 pb-22 pt-md-16 pb-md-20 pb-lg-26 ">
-    <div class="container">
-        <h2 class="text-primary mb-6 mb-md-4 text-center">立即預約</h2>
+  <section class="pt-12 pt-md-16 pb-22 pb-md-20 pb-lg-28">
+    <div class="container mb-12 mb-md-18 mb-md-16">
+        <h2 class="mb-6 mb-md-8 text-primary text-center">課程介紹</h2>
+        <div class="d-flex  mb-8 mb-md-10 mb-lg-8
+        overflow-auto   scrollbar--hide   ">
+            <div class="row flex-grow-1 justify-content-lg-center  ">
+                <div class="col-lg-10">
+                    <table class=" table table__spacing--sm d-block text-primary py-10 px-12  bg-secondary  rounded-16">
+                        <caption class=" d-block mb-2 text-white fs-5">
+                            2021 07 月
+                        </caption>
+                        <thead class="bg-white">
+                            <tr>
+                                <th scope="col" class="text-center border-end border-primary">時間</th>
+                                <th scope="col" class="text-center">星期一</th>
+                                <th scope="col " class="text-center bg-info">星期二</th>
+                                <th scope="col" class="text-center">星期三</th>
+                                <th scope="col " class="text-center bg-info">星期四</th>
+                                <th scope="col" class="text-center">星期五</th>
+                                <th scope="col " class="text-center bg-info">星期六</th>
+                            </tr>
+                        </thead>
+                        <tbody class="bg-white">
+                            <tr class="border-primary">
+                                <th class="text-nowrap border-end border-primary th__spacing--sm " scope="row">0900-1000
+                                </th>
+                                <td class="text-nowrap">基礎 Basic</td>
+                                <td class="text-nowrap bg-info"></td>
+                                <td class="text-nowrap"></td>
+                                <td class="text-nowrap bg-info">基礎 Basic</td>
+                                <td class="text-nowrap">基礎 Basic</td>
+                                <td class="text-nowrap bg-info">基礎 Basic</td>
+                            </tr>
+                            <tr class="border-primary">
+                                <th class="text-nowrap border-end border-primary th__spacing--sm " scope="row">1000-1100
+                                </th>
+                                <td class="text-nowrap">艾揚格 Iyengar</td>
+                                <td class="text-nowrap bg-info">哈達 Hatha</td>
+                                <td class="text-nowrap">寰宇 Universal</td>
+                                <td class="text-nowrap bg-info">哈達 Hatha</td>
+                                <td class="text-nowrap">艾揚格 Iyengar</td>
+                                <td class="text-nowrap bg-info">雙人飛行</td>
+                            </tr>
+                            <tr class="border-primary">
+                                <th class="text-nowrap border-end border-primary th__spacing--sm " scope="row">1100-1200
+                                </th>
+                                <td class="text-nowrap">寰宇 Universal</td>
+                                <td class="text-nowrap bg-info">陰陽 Yin Yang</td>
+                                <td class="text-nowrap">艾揚格 Iyengar</td>
+                                <td class="text-nowrap bg-info"></td>
+                                <td class="text-nowrap">寰宇 Universal</td>
 
-        <ul class="row justify-content-center mb-9 mb-md-7 mb-lg-9">
-            <li class="col-4 col-md-2">
-                <a href="reservation-level.html" class="btn btn-info  rounded-16 text-primary  w-100">
-                    選擇方案
-                </a>
+                                <td class="text-nowrap bg-info">艾揚格 Iyengar</td>
+
+                            </tr>
+                            <tr class="border-primary">
+                                <th class="text-nowrap border-end border-primary th__spacing--sm " scope="row">1200-1400
+                                </th>
+                                <td class="text-nowrap text-center" colspan="6">休息</td>
+
+
+                            </tr>
+                            <tr class="border-primary">
+                                <th class="text-nowrap border-end border-primary th__spacing--sm " scope="row">1400-1500
+                                </th>
+                                <td class="text-nowrap">雙人飛行</td>
+                                <td class="text-nowrap bg-info">基礎 Basic</td>
+                                <td class="text-nowrap">雙人飛行</td>
+                                <td class="text-nowrap bg-info">陰陽 Yin Yang</td>
+                                <td class="text-nowrap">雙人飛行</td>
+                                <td class="text-nowrap bg-info">基礎 Basic</td>
+
+                            </tr>
+                            <tr class="border-primary">
+                                <th class="text-nowrap border-end border-primary th__spacing--sm " scope="row">1500-1600
+                                </th>
+                                <td class="text-nowrap">陰陽 Yin Yang</td>
+                                <td class="text-nowrap bg-info">陰陽 Yin Yang</td>
+                                <td class="text-nowrap">基礎 Basic</td>
+                                <td class="text-nowrap bg-info">基礎 Basic</td>
+                                <td class="text-nowrap">哈達 Hatha</td>
+                                <td class="text-nowrap bg-info">香氛瑜珈</td>
+
+                            </tr>
+                            <tr class="border-primary" r="">
+                                <th class="text-nowrap border-end border-primary th__spacing--sm " scope="row">1600-1700
+                                </th>
+                                <td class="text-nowrap">哈達 Hatha</td>
+                                <td class="text-nowrap bg-info">雙人飛行</td>
+                                <td class="text-nowrap">陰陽 Yin Yang</td>
+                                <td class="text-nowrap bg-info">香氛瑜珈</td>
+                                <td class="text-nowrap">艾揚格 Iyengar</td>
+                                <td class="text-nowrap bg-info">陰陽 Yin Yang</td>
+
+                            </tr>
+                            <tr class="border-primary">
+                                <th class="text-nowrap border-end border-primary th__spacing--sm " scope="row">1700-1800
+                                </th>
+                                <td class="text-nowrap"></td>
+                                <td class="text-nowrap bg-info">艾揚格 Iyengar</td>
+
+                                <td class="text-nowrap">哈達 Hatha</td>
+                                <td class="text-nowrap bg-info">艾揚格 Iyengar</td>
+                                <td class="text-nowrap">寰宇 Universal</td>
+                                <td class="text-nowrap bg-info">哈達 Hatha</td>
+
+                            </tr>
+                            <tr class="border-primary">
+                                <th class="text-nowrap border-end border-primary th__spacing--sm " scope="row">1800-2000
+                                </th>
+                                <td class="text-nowrap text-center" colspan="6">休息</td>
+
+                            </tr>
+                            <tr class="border-primary">
+                                <th class="text-nowrap border-end border-primary th__spacing--sm " scope="row">2000-2100
+                                </th>
+                                <td class="text-nowrap text-end"></td>
+                                <td class="text-nowrap bg-info text-end"></td>
+                                <td class="text-nowrap text-end">香氛瑜珈</td>
+                                <td class="text-nowrap bg-info">艾揚格 Iyengar</td>
+                                <td class="text-nowrap">香氛瑜珈</td>
+                                <td class="text-nowrap bg-info">雙人飛行</td>
+                            </tr>
+
+
+
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+
+        </div>
+        <h2 class="mb-6 mb-lg-8 text-dark text-center">上課須知</h2>
+        <ul class="row ">
+            <li class="col-12  col-lg-7 offset-lg-2  mb-4 mb-md-6 hover hover__translateX__negative--base">
+
+
+                <div class="d-flex  align-items-center ">
+                    <span class="fs-3 text-primary">1.</span>
+                    <p class="border rounded-16 py-4 px-6 ms-6 mb-0 flex-grow-1">空中瑜珈、香氛開放 2 天前電話預約上課。</p>
+                </div>
+
+
+
             </li>
-            <li class="col-4 col-md-2 ">
-                <a href="fillin.html" class="btn btn-info  rounded-16 text-primary  w-100">
-                    填寫資料
-                </a>
+            <li class="col-12  col-lg-7 offset-lg-3 mb-4 mb-md-6 hover hover__translateX__negative--base">
+                <div class="  d-flex  align-items-center ">
+                    <span class="fs-3 text-primary">2.</span>
+                    <p class="border rounded-16 py-4 px-6 ms-6 mb-0 flex-grow-1 text-white bg-secondary">
+                        如果有特殊體質、特殊狀況，請主動告知該堂教師。</p>
+
+
+
             </li>
-            <li class="col-4 col-md-2 ">
-                <a href="javascript:void(0);" class="btn btn-primary rounded-16 w-100 text-white ">
-                    完成預約
-                </a>
+            <li class="col-12  col-lg-7 offset-lg-2 mb-4 mb-md-6 hover hover__translateX__negative--base">
+
+                <div class="d-flex  align-items-center ">
+                    <span class="fs-3 text-primary">3.</span>
+                    <p class="border rounded-16 py-4 px-6 ms-6 mb-0 flex-grow-1">取消預約或時間異動請於預約日前一天晚間 21:00 前告知。</p>
+                </div>
+
+
+
+            </li>
+            <li class="col-12  col-lg-7 offset-lg-3  hover hover__translateX__negative--base ">
+
+                <div class="d-flex  align-items-center ">
+                    <span class="fs-3 text-primary">4.</span>
+                    <p class="border rounded-16 py-4 px-6 ms-6 mb-0 flex-grow-1 text-white bg-secondary">
+                        運動過程中若感到任何不適，請馬上停止且與老師商量討論。</p>
+                </div>
+
+
             </li>
         </ul>
-        <div class="d-flex flex-column align-items-center flex-wrap text-primary mb-8">
-            <span class="material-icons-outlined material__icons--xl mb-5">
-                check_circle
-            </span>
-            <h3 class=" mb-0  fs-5 ">已完成預約，以下是您的預約資訊:</h3>
-        </div>
-
-
-        <div class="row justify-content-center flex-lg-column align-items-lg-center">
-            <div class="col-12 col-md-8 col-lg-6 text-dark mb-6">
-                <div class="accordion" id="reservation-info">
-                    <div class="accordion-item">
-                        <h3 class="accordion-header  " id="headingOne">
-                            <button class="accordion-button text-white bg-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapsedata" aria-expanded="true" aria-controls="collapseOne">
-                                預約資訊
-                            </button>
-                        </h3>
-                        <div id="collapsedata" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#reservation-info" >
-                            <div class="accordion-body text-primary">
-                                <div class="d-flex align-items-center mb-4">
-                                    <p class="mb-0">您預約的是</p>
-                                    <h3 class="text-secondary fs-5  mb-0 ms-2">首次體驗課程-基礎</h3>
-                                </div>
-                                <ul>
-                                    <li class="mb-2">上課預約報到日：<span class="align-middle">2021/07/21</span></li>
-                                    <li class="mb-2">預約人：<span class="align-middle">Joanne Chen</span></li>
-                                    <li class="mb-2">年齡：<span class="align-middle">18 歲</span></li>
-                                    <li class="mb-2">性別：<span class="align-middle">女</span></li>
-                                    <li class="mb-2">電子信箱：<span class="align-middle">example123@gmail.com</span>
-                                    </li>
-                                    <li>手機號碼：<span class="align-middle">0912-345-678</span></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4 text-primary">
-                <h4 class="mb-2 fs-5 text-center">上課注意事項</h4>
-                <p class="mb-8">第一次上課請提前 10-15 分鐘至櫃檯報到，請攜帶毛巾、水 .穿著運動服、乾淨室內運動鞋。 如欲更改體驗時間請提前通知我們喔！</p>
-               
-                <a href="index.html" class="btn btn-secondary text-white fs-5 w-100">返回首頁</a>
-            </div>
-        </div>
-
     </div>
-
 </section>
   <!-- pb-6 pb-md-8 -->
   <footer class="footer bg-primary pt-6 pt-md-8 pb-8 text-white">
