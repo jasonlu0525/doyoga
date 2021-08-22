@@ -1,0 +1,33 @@
+.class__room {
+ &__info{
+     top: 88px;
+     @include pad{
+        top: 93.61px;
+     }
+ }
+    &__img {
+        width: 100%;
+        height: 350px;
+
+        @include pad {
+            height: 216px;
+        }
+
+        @include pc {
+            height: 350px;
+        }
+    }
+}
+
+.class__intro__img {
+    width: 100%;
+    height: 196px;
+
+    @include pad {
+        height: 161px;
+    }
+
+    @include pc {
+        height: 196px;
+    }
+}

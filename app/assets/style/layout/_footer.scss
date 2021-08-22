@@ -1,16 +1,5 @@
 .social__img {
     width: 24px;
     height: 24px;
-    transition: transform ease .5s ;
-    &:hover{
-        transform: scale(1.1);
-    }
-}
 
-.link--hover{
-    transition: color ease .2s;
-    &:hover{
-        color:$info;
-        text-decoration: white wavy underline ;
-    }
 }

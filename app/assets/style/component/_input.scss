@@ -6,3 +6,17 @@
         margin: 0;
     }
 }
+
+.placeholder--secondary::placeholder,
+.text-secondary::-webkit-input-placeholder,
+.text-secondary:-ms-input-placeholder,
+.text-secondary::-moz-placeholder {
+    color: $secondary;
+}
+
+.placeholder--primary::placeholder,
+.text-primary::-webkit-input-placeholder,
+.text-primary:-ms-input-placeholder,
+.text-primary::-moz-placeholder {
+    color: $primary;
+}

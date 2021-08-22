@@ -1,0 +1,15 @@
+.comment__swiper{
+    overflow: hidden !important;
+    @include pad{
+        overflow: visible !important;
+    }
+}
+.swiper-button-next,.swiper-button-prev{
+  &::after{
+    content: " ";
+  }
+    & > span{
+        font-size: 40px;
+    }
+}
+

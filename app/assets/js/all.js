@@ -4562,12 +4562,12 @@ let anchor_reservationPage_level = document.querySelectorAll(`*[data-path="reser
 
 //reservation-level
 
-hamment.addEventListener('click', function () {
-  navbar_list.forEach(function (value) {
-    value.classList.toggle('d-none');
+// hamment.addEventListener('click', function () {
+//   navbar_list.forEach(function (value) {
+//     value.classList.toggle('d-none');
 
-  })
-})
+//   })
+// })
 anchor_reservationPage.forEach(function (el) {
 
   el.addEventListener('click', function () {
@@ -4582,26 +4582,55 @@ anchor_reservationPage_level.forEach(function (el) {
 })
 
 
-
-const swiper = new Swiper('.scroller', {
+const comment__swiper = new Swiper('.comment__swiper', {
   // Default parameters
 
   breakpoints: {
 
     // when window width is >= 380px
     320: {
-      slidesPerView: 2,
-      spaceBetween: 15,
+      centeredSlides: true,
+      noSwiping: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
     },
-    576: {
-      slidesPerView: 3,
-      spaceBetween: 15,
+    768: {
+      noSwiping: true,
+      slidesPerView: "auto",
+      // spaceBetween: 15,
     },
     // when window width is >= 992px
     992: {
+      // slidesPerView: 3,
+      // spaceBetween: 30,
+      noSwiping: true,
+      slidesPerView: "auto",
+      //swiper-no-swiping
+    }
+
+  }
+})
+
+
+
+// 首頁 環境介紹
+const index__intro = new Swiper('.scroller', {
+  // Default parameters
+
+  breakpoints: {
+
+    // when window width is >= 380px
+   320:{
+    noSwiping: true,
+    slidesPerView:2,
+    spaceBetween: 0,
+   },
+    992: {
       slidesPerView: "auto",
       spaceBetween: 30,
-      centeredSlides: false,
+      noSwiping: false,
 
     }
 
@@ -4615,8 +4644,6 @@ const intro_swiper = new Swiper('.intro-scroller', {
 
     // when window width is >= 380px
     320: {
-      slidesPerView: 0,
-      spaceBetween: 15,
       noSwiping: true
     },
     768: {
@@ -4630,6 +4657,33 @@ const intro_swiper = new Swiper('.intro-scroller', {
       spaceBetween: 30,
       centeredSlides: false,
       noSwiping: false
+    }
+
+  }
+})
+
+
+const recommend = new Swiper('.recommend__course', {
+  // Default parameters
+
+  breakpoints: {
+
+    // when window width is >= 380px
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 30,
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+
+    },
+    // when window width is >= 992px
+    992: {
+      slidesPerView: 4,
+      spaceBetween: 30,
+
+
     }
 
   }

@@ -1,0 +1,68 @@
+---
+title: 聯絡我們
+layout: ./app/layout.ejs
+engine: ejs
+current: contact
+---
+
+<section class="pt-12 pt-md-16 pb-22 pb-md-20 pb-lg-28">
+    <div class="container">
+        <h2 class="mb-6 mb-md-8 text-primary text-center">聯絡我們</h2>
+        <div class="row justify-content-center text-primary">
+            <div class="col-12 col-md-10 col-lg-7 mb-10 mb-lg-0">
+                <div class="mb-6 ">
+                    <iframe class="w-100"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3645.619908835482!2d120.98046966129513!3d23.97387718112334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3468d97c070e293b%3A0x44ca015abe82d72a!2z6JmO6aCt5bGx!5e0!3m2!1szh-TW!2stw!4v1629553608227!5m2!1szh-TW!2stw"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="row g-0">
+                    <div class="col-12 col-md-7">
+                        <h3 class="mb-2">DOYOGA 教室位置</h3>
+                        <p class="mb-2 mb-md-8 mb-lg-2">高雄市苓雅區北信街 23 號 2 樓</p>
+                        <p class="d-md-mone d-lg-block">如何前往：</p>
+                        <ol>
+                            <li class="mb-6">1. 搭乘捷運：紅線到正義站 3 號出口，延正義路方向至北信街交叉口即可。</li>
+                            <li class="mb-6">2. 搭乘公車：搭這些公車都可以抵達正義站 24B 25 33 50 76 77 77區 100</li>
+                            <li>3. 開車前往北信街 32 號，教室旁有專屬停車場可以使用。</li>
+                        </ol>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="col-12 col-md-10 col-lg-5 d-flex flex-column">
+                <div class="bg-info rounded-16 p-8 flex-grow-1">
+                    <h3 class="mb-4 mb-md-6 fs-5">意見回饋&問題詢問</h3>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">姓名</label>
+                        <input type="text" id="name" name="name"
+                            class="form-control text-secondary  placeholder--secondary" placeholder="請輸入您的姓名" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">電子信箱</label>
+                        <input type="email" id="email" name="email"
+                            class="form-control  text-secondary  placeholder--secondary" placeholder="email@example.com"
+                            required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="tel" class="form-label">手機號碼</label>
+                        <input type="tel" id="tel" name="tel"
+                            class="form-control text-secondary  placeholder--secondary" placeholder="請輸入您的電話號碼"
+                            required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="comment" class="form-label ">意見回饋</label>
+                       
+                        <textarea name="comment" id="comment" cols="30" rows="10" class=" text-secondary border-secondary w-100 "
+                            required></textarea>
+                    </div>
+                   
+                        <button type="submit"  value="送出"  class=" d-block ms-auto btn btn-primary text-white ">送出</button>
+                  
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</section>

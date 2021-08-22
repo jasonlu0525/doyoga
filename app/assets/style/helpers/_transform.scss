@@ -1,14 +1,12 @@
-.negative__translateX__base--hover{
-    cursor: pointer;
-    transition: transform ease .2s;
-    &:hover{
-        transform: translateX(-10%);
-    }
-}
+
 
 .translateX-0{
     transform: translateX(0) !important;
 }
+.translateY-n50{
+    transform: translateY(-50%) !important;
+}
+
 
 
 .translate-n50{

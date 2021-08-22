@@ -1,0 +1,13 @@
+.table__spacing--sm{
+    & th ,& td {
+        box-sizing: content-box;
+    }
+   
+    & .th__spacing--sm {
+        padding: 0.5rem 2px;
+    }
+
+    & th:not(.th__spacing--sm),& td {
+        padding: 0.5rem 9px;
+    }
+}

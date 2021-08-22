@@ -5,29 +5,40 @@
         height: 341px;
     }
 }
-.intro__course__img{
-    height: 196px;
-    width: 100%;
+
+.intro__course {
+    cursor: pointer;
     margin-bottom: 30px;
-    &.last{
+
+    &.last {
         margin-bottom: 0;
     }
-  
-    @include pad{
+
+    @include pad {
         margin-bottom: 44px;
-        &.last__row{
+
+        &.last__row {
             margin-bottom: 0;
         }
     }
-    @include pc{
+
+    @include pc {
         margin-bottom: 30px;
     }
+
+    &__img {
+        height: 196px;
+        width: 100%;
+
+    }
 }
-.intro-text{
+
+.intro-text {
     position: relative;
     right: 0;
-    top:0;
-    @include  pc{
-        position:absolute;
+    top: 0;
+
+    @include pc {
+        position: absolute;
     }
 }

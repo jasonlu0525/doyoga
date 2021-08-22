@@ -1,0 +1,55 @@
+.hover {
+    cursor: pointer;
+    transition: transform ease-in .2s;
+
+    &__scale {
+        &--slower {
+            transition-duration: .4s;
+        }
+
+        &--larger:hover {
+            transform: scale(1.1);
+        }
+
+
+        &--smaller:hover {
+            transform: scale(0.9);
+        }
+
+        &--smallest:hover {
+            transform: scale(0.7);
+        }
+
+    }
+
+    &__translateX {
+
+        &__postive--base:hover {
+            transform: translateX(10%);
+        }
+
+        &__postive--sm:hover {
+            transform: translateX(5%);
+        }
+
+        &__negative--base:hover {
+            transform: translateX(-10%);
+        }
+    }
+
+    &--primary:hover {
+        color: $primary;
+    }
+
+    &--info:hover {
+        color: $info;
+    }
+
+    &__text-decoration--wavy:hover {
+        text-decoration: $white wavy underline;
+    }
+
+    &__text-decoration--solid:hover {
+        text-decoration: 5px  $dark solid underline ;
+    }
+}

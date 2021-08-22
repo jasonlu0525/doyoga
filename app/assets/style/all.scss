@@ -4,12 +4,17 @@
 @import 'abstracts/mixin';
 @import 'abstracts/utilities';
 
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+
+@import './vendor/swiper';
+
 @import './helpers/z-index';
 @import './helpers/objcet-fit';
 @import './helpers/text';
 @import './helpers/transform';
 @import './helpers/scroller';
 @import './helpers/opacity';
+@import './helpers/hover';
 
 @import './component/card';
 @import './component/button';
@@ -17,14 +22,13 @@
 @import './component/list';
 @import './component/icon';
 @import './component/input';
-
-@import "../../../node_modules/bootstrap/scss/bootstrap";
-
+@import './component/modal';
+@import './component/table';
 
 @import './base/config';
 @import './layout/header';
 @import './layout/footer';
 
-
 @import './page/index';
 @import './page/introduction';
+@import './page/classroom';
