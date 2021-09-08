@@ -4546,40 +4546,7 @@
 //# sourceMappingURL=swiper-bundle.min.js.map
 
 
-let hamment = document.querySelector("#menu");
-let navbar_list = document.querySelectorAll(".navbar__list");
-let anchor_reservationPage = document.querySelectorAll(`*[data-path="reservation"]`);
-let anchor_reservationPage_level = document.querySelectorAll(`*[data-path="reservation-level"]`);
 
-// window.addEventListener('resize',function () {
-//   let width=this.innerWidth;
-//   let swipper=document.querySelector("#swipper__mobile--none");
-//   if(width<768){
-//     swipper.classList.remove('swiper-container')
-//   }
-//   console.log(width);
-//   })
-
-//reservation-level
-
-// hamment.addEventListener('click', function () {
-//   navbar_list.forEach(function (value) {
-//     value.classList.toggle('d-none');
-
-//   })
-// })
-anchor_reservationPage.forEach(function (el) {
-
-  el.addEventListener('click', function () {
-    location.href = "reservation.html";
-  })
-})
-anchor_reservationPage_level.forEach(function (el) {
-
-  el.addEventListener('click', function () {
-    location.href = "reservation-level.html";
-  })
-})
 
 
 const comment__swiper = new Swiper('.comment__swiper', {
@@ -4644,7 +4611,8 @@ const intro_swiper = new Swiper('.intro-scroller', {
 
     // when window width is >= 380px
     320: {
-      noSwiping: true
+      noSwiping: true,
+     slidesPerView: 1,
     },
     768: {
       slidesPerView: 2,
