@@ -5883,7 +5883,7 @@ const intro_swiper = new Swiper('.intro-scroller', {
     // when window width is >= 380px
     320: {
       noSwiping: true,
-      slidesPerView: 1,
+       slidesPerView: 1,
     },
     768: {
       slidesPerView: 2,
