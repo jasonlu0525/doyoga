@@ -24916,6 +24916,10 @@ fieldset:disabled .btn {
   font-size: 40px;
 }
 
+.datepicker-cell.selected, .datepicker-cell.selected:hover {
+  background-color: #907A7B;
+}
+
 .z-index-2 {
   z-index: 2;
 }
@@ -25142,6 +25146,33 @@ label.star-item:hover ~ .star-item {
           box-shadow: 0px 3px 6px #00000029;
 }
 
+.list-style-decimal {
+  list-style: decimal;
+}
+
+.list-style-disc {
+  list-style: disc;
+}
+
+.list-style-disc--before {
+  position: relative;
+}
+
+.list-style-disc--before::before {
+  display: block;
+  position: absolute;
+  content: " ";
+  width: 5px;
+  left: -10px;
+  top: 50%;
+  height: 5px;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-color: #fff;
+  border-radius: 50%;
+}
+
 .material__icons--lg {
   font-size: 36px;
   width: 36px;
@@ -25269,6 +25300,17 @@ body {
   -webkit-transition: all .15s ease-in-out;
   -o-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+}
+
+.logo {
+  background-image: url("../images/DOYOGA-logo.png");
+  display: block;
+  width: 116px;
+  text-indent: 101%;
+  background-size: contain;
+  overflow: hidden;
+  white-space: nowrap;
+  background-repeat: no-repeat;
 }
 
 .social__img {

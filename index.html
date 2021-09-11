@@ -7,10 +7,12 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>DOYOGA，做你的瑜珈</title>
 
+
   <link
     href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
     rel="stylesheet">
   <link rel="stylesheet" href="./assets/style/vendor/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./assets/style/vendor/datepicker.min.css">
   <link rel="stylesheet" href="./assets/style/all.css">
 </head>
 
@@ -56,43 +58,34 @@
   </ul>
   <header class=" z-index-999 bg-info  py-7 position-sticky start-0 top-0">
     <div class="container">
-      <div class=" d-flex justify-content-between align-items-center flex-wrap flex-md-nowrap " id="header">
-        <h1 class="mb-0 fs-4 align-self-start  align-self-md-center "><a href="index.html">DOYOGA</a></h1>
+      <div class=" d-flex justify-content-between align-items-center flex-wrap flex-md-nowrap navbar-expand-md"
+        id="header">
+        <h1 class="mb-0 fs-4 align-self-start  align-self-md-center "><a href="index.html" class="logo">DOYOGA</a></h1>
 
-        <button class=" material-icons  fs-2 border-0 navbar-toggler collapsed d-md-none" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+        <button class="material-icons fs-2 border-0 navbar-toggler" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-expanded="true">
           menu
         </button>
-        <div class="collapse navbar-collapse " id="navbarSupportedContent">
-          <ul class="text-gray-dark mb-0 navbar__list d-md-flex mt-4 mt-md-0 ">
-            <li class="px-md-4 mb-4 mb-md-0"><a href="introduction.html"
-                class="hover hover--primary hover__text-decoration--solid ">課程介紹</a></li>
-            <li class="px-md-4  mb-4 mb-md-0"><a href="classroom.html"
-                class="hover hover--primary hover__text-decoration--solid ">瑜珈空間</a></li>
-            <li class="px-md-4"><a href="schedule.html"
-                class="hover hover--primary hover__text-decoration--solid ">當月課表</a></li>
+        <div class="navbar-collapse d-md-flex justify-content-end collapse " id="navbarSupportedContent">
+          <ul class="text-gray-dark mb-0 navbar__list d-md-flex mt-4 mt-md-0 mx-auto">
+            <li><a href="introduction.html"
+                class=" px-md-4 mb-4 mb-md-0 | hover hover--primary hover__text-decoration--solid ">課程介紹</a></li>
+            <li><a href="classroom.html"
+                class=" px-md-4  mb-4 mb-md-0 | hover hover--primary hover__text-decoration--solid ">瑜珈空間</a></li>
+            <li><a href="schedule.html" class=" px-md-4 | hover hover--primary hover__text-decoration--solid ">當月課表</a>
+            </li>
           </ul>
           <ul class="mb-0 navbar__list d-flex justify-content-end">
             <li><a href="reservation.html" class="btn btn-outline-primary border-secondary  rounded-16 ">立即預約</a></li>
             <li><a href="contact.html" class="btn btn-outline-primary border-secondary ms-4  rounded-16 ">聯絡我們</a></li>
           </ul>
         </div>
-     
-       
-          <ul class="text-gray-dark mb-0 navbar__list d-md-flex mt-4 mt-md-0  d-none d-md-block">
-            <li class="px-md-4 mb-4 mb-md-0"><a href="introduction.html"
-                class="hover hover--primary hover__text-decoration--solid ">課程介紹</a></li>
-            <li class="px-md-4  mb-4 mb-md-0"><a href="classroom.html"
-                class="hover hover--primary hover__text-decoration--solid ">瑜珈空間</a></li>
-            <li class="px-md-4"><a href="schedule.html"
-                class="hover hover--primary hover__text-decoration--solid ">當月課表</a></li>
-          </ul>
-          <ul class="mb-0 navbar__list  justify-content-end d-none d-md-flex">
-            <li><a href="reservation.html" class="btn btn-outline-primary border-secondary  rounded-16 ">立即預約</a></li>
-            <li><a href="contact.html" class="btn btn-outline-primary border-secondary ms-4  rounded-16 ">聯絡我們</a></li>
-          </ul>
-        </div>
 
-    
+
+
+      </div>
+
+
 
 
     </div>
@@ -101,19 +94,19 @@
   <!-- d-flex flex-column flex-lg-row  justify-content-lg-between  align-items-md-start  align-items-lg-cente -->
   
     
-<div class="banner">
-  <div class="container h-100">
-    <div class="row h-100 align-items-center">
+<div class="banner d-flex align-items-center">
+  <div class="container ">
+    <div class="row ">
       <div class="col-12 col-md-8 col-lg-5 text-dark">
 
         <h2 class="lh-base">
           <span class="fs-6 d-block">健身輕時尚</span>
           DOYOGA，做你的瑜珈</h2>
         <p class="mb-4">多給自己一點時間享受靜謐，傾聽內心的聲音。</p>
-        <div class="d-flex">
+        
           <a href="reservation.html" class="btn btn-info  btn__custom--lg  fs-5 ">立即預約</a>
           <a href="introduction.html" class="btn btn-secondary btn__custom--lg  text-white  fs-5 ms-2">課程介紹</a>
-        </div>
+     
 
       </div>
     </div>
@@ -123,33 +116,40 @@
 <section class="container pt-8 pb-12">
   <h2 class="text-primary mb-1 text-center">感受身心，活在當下</h2>
   <h3 class="text-secondary mb-6 mb-lg-8 text-center">DOYOGA 可以帶給你...</h3>
+ 
   <ul class="text-white row">
     <li class="col-12 col-md-4  position-relative mb-3 mb-md-0 hover hover__scale--larger">
-      <img src="./assets/images/photo-1593810450967-f9c42742e326.jpeg" height="420"
-        alt="整體健身，每一個動作，都融入運動解剖學的的觀點強調以身體的中心線為出發點。" class=" rounded-16  feature__img  object-fit-cover">
-      <div class="position-absolute bottom-0 start-0 w-100 px-7 pb-6 pb-md-4 pb-md-6">
+    <div class="card">
+     <img src="./assets/images/photo-1593810450967-f9c42742e326.jpeg" height="420" alt="整體健身，每一個動作，都融入運動解剖學的的觀點強調以身體的中心線為出發點。" class=" rounded-16  feature__img  object-fit-cover">
+      <div class=" card-img-overlay d-flex flex-column justify-content-end px-6 pb-6 pb-md-4 pb-md-6">
         <h4 class="mb-1">整體健身</h4>
         <p class="mb-0 text-eclipse-3">每一個動作，都融入運動解剖學的的觀點強調以身體的中心線為出發點。</p>
       </div>
+    </div>
+     
 
     </li>
     <li class="col-12 col-md-4  position-relative mb-3 mb-md-0 hover hover__scale--larger">
-      <img class=" rounded-16  feature__img  object-fit-cover"
-        src="./assets/images/photo-1593810451137-5dc55105dace.jpeg" alt="減壓放鬆，調節全身系統、改善血液循環、減壓養心、釋放身心，達到修心養性的目的。">
-      <div class="position-absolute bottom-0 start-0 w-100 px-7 pb-6 pb-md-4 pb-md-6">
-        <h4 class="mb-1">減壓放鬆</h4>
-        <p class="mb-0 text-eclipse-3">調節全身系統、改善血液循環、減壓養心、釋放身心，達到修心養性的目的。</p>
+      <div class="card">
+        <img class=" rounded-16  feature__img  object-fit-cover" src="./assets/images/photo-1593810451137-5dc55105dace.jpeg" alt="減壓放鬆，調節全身系統、改善血液循環、減壓養心、釋放身心，達到修心養性的目的。">
+        <div class="card-img-overlay d-flex flex-column justify-content-end px-6 pb-6 pb-md-4 pb-md-6">
+          <h4 class="mb-1">減壓放鬆</h4>
+          <p class="mb-0 text-eclipse-3">調節全身系統、改善血液循環、減壓養心、釋放身心，達到修心養性的目的。</p>
+        </div>
       </div>
+    
 
     </li>
     <li class="col-12 col-md-4   position-relative hover hover__scale--larger">
-      <img class=" rounded-16  feature__img  object-fit-cover"
-        src="./assets/images/photo-1599901860904-17e6ed7083a0.jpeg" alt="局部雕塑,幫助強化背部與腹部的核心肌群，增進我們身體穩定度以及保持良好體態。">
-      <div class="position-absolute bottom-0 start-0 w-100 px-7 pb-6 pb-md-4 pb-md-6">
+     <div class="card">
+      <img class=" rounded-16  feature__img  object-fit-cover" src="./assets/images/photo-1599901860904-17e6ed7083a0.jpeg" alt="局部雕塑,幫助強化背部與腹部的核心肌群，增進我們身體穩定度以及保持良好體態。">
+      <div class="card-img-overlay d-flex flex-column justify-content-end px-6 pb-6 pb-md-4 pb-md-6">
         <h4 class="mb-1">局部雕塑</h4>
         <p class="mb-0 text-eclipse-3">幫助強化背部與腹部的核心肌群，增進我們身體穩定度以及保持良好體態。</p>
       </div>
 
+     </div>
+     
     </li>
   </ul>
 </section>
@@ -244,7 +244,7 @@
 
 </section>
 
-<div class="py-12 py-md-14 py-lg-16 bg-info">
+<section class="py-12 py-md-14 py-lg-16 bg-info">
   <div class="container">
 
     <div class="row align-items-center">
@@ -278,7 +278,7 @@
   </div>
 
 
-</div>
+</section>
 
 <section class="pt-8 pb-12 pt-md-10 pb-md-14 pb-lg-16 ">
   <div class="container">
@@ -288,7 +288,7 @@
 
       <li class="col-lg-4 mb-4 mb-md-6 mb-lg-0 ">
 
-        <div class="card hover hover__scale--slower hover__scale--larger   flex-md-row flex-lg-column border-secondary rounded-16" data-path="reservation">
+        <div class="card hover hover__scale--slower hover__scale--larger   flex-md-row flex-lg-column border-secondary rounded-16" >
           <img src="./assets/images/woman in white tank top and white leggings bending her body.jpg"
             class="card__img object-fit-cover flex-shrink-0"
             alt="woman in white tank top and white leggings bending her body">
@@ -298,7 +298,7 @@
             <p class="text-primary mb-10 mb-md-6 mb-lg-10">
               分基礎、中級、高級可以選擇。初次至 DOYOGA 上課建議選擇此方案。
             </p>
-            <a href="#" class="btn btn-primary w-100 text-white fs-5">選擇課程</a>
+            <a href="reservation.html" class="btn btn-primary stretched-link w-100 text-white fs-5">選擇課程</a>
           </div>
         </div>
         </a>
@@ -307,7 +307,7 @@
 
       <li class="col-lg-4 mb-4 mb-md-6 mb-lg-0 ">
 
-        <div class="card  hover hover__scale--slower hover__scale--larger  flex-md-row flex-lg-column border-secondary rounded-16" data-path="reservation">
+        <div class="card  hover hover__scale--slower hover__scale--larger  flex-md-row flex-lg-column border-secondary rounded-16" >
           <img src="./assets/images/woman performing yoga.jpg" class="card__img object-fit-cover flex-shrink-0"
             alt="woman performing yoga">
           <div class="card-body p-6">
@@ -316,14 +316,14 @@
             <p class="text-primary mb-10 mb-md-6 mb-lg-10">
               分基礎、中級、高級可以選擇。想試著培養瑜珈習慣者可以選擇此方案。
             </p>
-            <a href="#" class="btn btn-primary w-100 text-white fs-5">選擇課程</a>
+            <a href="reservation.html" class="btn btn-primary stretched-link w-100 text-white fs-5">選擇課程</a>
           </div>
         </div>
 
       </li>
       <li class="col-lg-4  ">
 
-        <div class="card  hover hover__scale--slower hover__scale--larger  flex-md-row flex-lg-column border-secondary rounded-16" data-path="reservation">
+        <div class="card  hover hover__scale--slower hover__scale--larger  flex-md-row flex-lg-column border-secondary rounded-16" >
           <img src="./assets/images/woman in blue leggings and black tank top doing yoga.jpg"
             class="card__img object-fit-cover" alt="woman in blue leggings and black tank top doing yoga">
           <div class="card-body p-6">
@@ -332,7 +332,7 @@
             <p class="text-primary mb-10 mb-md-6 mb-lg-10">
               分基礎、中級、高級可以選擇。有長期習慣做瑜伽者建議選擇此方案。
             </p>
-            <a href="#" class="btn btn-primary w-100 text-white fs-5">選擇課程</a>
+            <a href="reservation.html" class="btn btn-primary stretched-link w-100 text-white fs-5">選擇課程</a>
           </div>
         </div>
 
@@ -595,7 +595,9 @@
       <section class="d-flex justify-content-between ">
         <div class="">
           <h5 class="mb-2">
-            <a href="index.html">DOYOGA</a>
+            <a href="index.html">
+              <img src="./assets/images/DOYOGA.png" width="96" height="31" alt="DOYOGA logo">
+            </a>
           </h5>
           <ul>
             <li class="mb-2">
