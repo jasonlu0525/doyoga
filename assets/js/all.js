@@ -6833,7 +6833,7 @@ if (elem) {
     ignoreReadonly: true,
     allowInputToggle: true
   });
-  elem.addEventListener('focus', function (e) {
+  elem.addEventListener('keydown', function (e) {
     e.preventDefault();
   });
 }
