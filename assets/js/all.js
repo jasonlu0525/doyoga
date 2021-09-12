@@ -6833,5 +6833,8 @@ if (elem) {
     ignoreReadonly: true,
     allowInputToggle: true
   });
+  elem.addEventListener('focus', function (e) {
+    e.preventDefault();
+  });
 }
 //# sourceMappingURL=all.js.map
