@@ -5932,6 +5932,9 @@ const elem = document.querySelector("input[data-vendor='date-picker']");
 
 if (elem) {
   new Datepicker(elem, {
-    autohide: true
+    autohide: true,
+    format: 'DD/MM/YYYY',
+    ignoreReadonly: true,
+    allowInputToggle: true
   });
 }
